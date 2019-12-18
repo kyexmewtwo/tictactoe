@@ -1,13 +1,21 @@
-
-
-
-
-
-
-
+let xoro = "o"; 
+function performLogic(a,b){
+  console.log(a,b);
+  $(a).hide();
+  if (xoro === "o"){
+      xoro = "x";}
+    else{
+      xoro = "o";
+    }
+  console.log(xoro);
+}
+let points = 0;
+  
+  
 $("#button1").click(function() {
     performLogic("#button1","#tile1");
 });
+
 
 $("#button2").click(function() {
     performLogic("#button2","#tile2");
